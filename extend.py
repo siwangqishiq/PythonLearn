@@ -2,6 +2,9 @@
 
 class Animal(object):
 	def __init__(self):
+		self.__age = 10
+		self.age = 11
+		self.name = "animal"
 		print("Animal init func")
 	
 	def say(self):
@@ -14,7 +17,11 @@ class Dog(Animal):
 
 	def fuck(self):
 		print("Fuck")
+		print("name = %s"%self.name)
+		print("age = %s"%self.age)
 		
 wang = Dog()
 wang.say()
 wang.fuck()
+
+#print(Dog._maro_())
